@@ -1,11 +1,20 @@
 class Emmy
 
-    attr_accessor :is_hungry
+    attr_accessor hungry, fed
 
     attr_reader :attitude
 
-    def initialize(attitude, is_hungry)
+    def initialize(attitude, hungry=true)
         @attitude = attitude
-        is_hungry = true 
+        @hungry = hungry
+        @fed = true
+    end
+
+    def is_hungry?
+        if @hungry
+            true
+        else @fed
+            false
+        end
     end
 end
