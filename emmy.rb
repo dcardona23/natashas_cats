@@ -8,4 +8,7 @@ class Emmy
         @attitude = attitude
         is_hungry = true 
     end
+
+    
+
 end
